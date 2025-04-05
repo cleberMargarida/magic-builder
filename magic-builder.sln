@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "samples\Hello
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicBuilder", "src\MagicBuilder\MagicBuilder.csproj", "{C7526182-2277-49E5-86D5-5720CE349580}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8C8F87C7-164E-4AA4-9B3B-456FC52825D9}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		version.json = version.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
