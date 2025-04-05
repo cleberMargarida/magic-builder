@@ -82,7 +82,7 @@ jobs:
       - name: Find and push NuGet package
         run: |
           # Find the .nupkg file
-          PACKAGE_FILE=$(find src/bin/Release -name '*.nupkg')
+          PACKAGE_FILE=$(find src/MagicBuilder/bin/Release -name '*.nupkg')
           
           # Check if the file exists
           if [ -z "$PACKAGE_FILE" ]; then
