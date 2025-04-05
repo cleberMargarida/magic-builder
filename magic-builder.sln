@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{35109BF9-1B47-4439-8105-6650BE6CE4CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{E795C195-6F43-4CB6-8549-5EA347B430BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "samples\HelloWorld\HelloWorld.csproj", "{B8714F94-C778-42D7-A98B-DEDC2FE5396A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicBuilder", "src\MagicBuilder\MagicBuilder.csproj", "{C7526182-2277-49E5-86D5-5720CE349580}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8714F94-C778-42D7-A98B-DEDC2FE5396A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8714F94-C778-42D7-A98B-DEDC2FE5396A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8714F94-C778-42D7-A98B-DEDC2FE5396A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8714F94-C778-42D7-A98B-DEDC2FE5396A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7526182-2277-49E5-86D5-5720CE349580}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7526182-2277-49E5-86D5-5720CE349580}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7526182-2277-49E5-86D5-5720CE349580}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7526182-2277-49E5-86D5-5720CE349580}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B8714F94-C778-42D7-A98B-DEDC2FE5396A} = {E795C195-6F43-4CB6-8549-5EA347B430BC}
+		{C7526182-2277-49E5-86D5-5720CE349580} = {35109BF9-1B47-4439-8105-6650BE6CE4CD}
+	EndGlobalSection
+EndGlobal
