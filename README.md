@@ -1,5 +1,16 @@
 ﻿# MagicBuilder
 
+<p align="left">
+  <a href="https://github.com/cleberMargarida/magic-builder/actions/workflows/workflow.yml">
+    <img src="https://github.com/cleberMargarida/magic-builder/actions/workflows/workflow.yml/badge.svg" alt="Build-deploy pipeline">
+  </a>
+  <a href="https://www.nuget.org/packages/MagicBuilder">
+    <img src="https://img.shields.io/nuget/vpre/MagicBuilder.svg" alt="Magic Builder Version">
+  </a>  
+</p>
+
+
+
 **MagicBuilder** is a lightweight and powerful .NET library that simplifies the creation of builder objects using a fluent, customizable API.
 
 Built on **.NET Standard 2.0**, it's compatible with:
