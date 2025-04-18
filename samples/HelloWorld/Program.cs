@@ -2,12 +2,14 @@
 using System.Text.Json;
 
 //Register at assembly level
+[assembly: GenerateBuilder(typeof(Entity))]
 [assembly: GenerateBuilder(typeof(Person))]
 [assembly: GenerateBuilder(typeof(Contact))]
 [assembly: GenerateBuilder(typeof(Address))]
 
 /// Example usage
 var person = Builder.Create<Person>()
+                    .WithId(10)
                     .WithAge(21)
                     .WithName("name")
                     .WithAddress(
@@ -30,8 +32,14 @@ var person = Builder.Create<Person>()
 
 Console.WriteLine(JsonSerializer.Serialize(person));
 
+
+public class Entity
+{
+    public int Id { get; set; }
+}
+
 /// Supports Class
-public class Person
+public class Person : Entity
 {
     public string Name { get; set; }
     public int Age { get; set; }

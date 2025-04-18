@@ -1,4 +1,5 @@
 ﻿using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Text;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -50,6 +51,19 @@ internal class BuilderGenerator : IIncrementalGenerator
             .Where(s => s.CanBeReferencedByName && s.DeclaredAccessibility is Accessibility.Public)
             .OfType<IPropertySymbol>()
             .Where(p => p.SetMethod is not null);
+
+        var @base = type.BaseType;
+
+        while (@base != null)
+        {
+            members = members.Concat(@base.GetMembers()
+                .Where(s => s.CanBeReferencedByName && s.DeclaredAccessibility is Accessibility.Public)
+                .OfType<IPropertySymbol>()
+                .Where(p => p.SetMethod is not null));
+
+            @base = @base.BaseType;
+        }
+
 
         var stringBuilder = stringBuilderPool.Rent();
         try
